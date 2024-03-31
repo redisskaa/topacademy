@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(view -> {
             Toast toast = Toast.makeText(this, "123", Toast.LENGTH_LONG);
             toast.setGravity(Gravity.END, 0, 0);
+            toast.show();
         });
     }
 }
