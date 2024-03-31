@@ -1,12 +1,11 @@
 package com.example.topacademy;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.buttonToast);
         button.setOnClickListener(view -> {
             Toast toast = Toast.makeText(this, "123", Toast.LENGTH_LONG);
-            toast.show();
             toast.setGravity(Gravity.END, 0, 0);
+            toast.show();
         });
     }
 }
